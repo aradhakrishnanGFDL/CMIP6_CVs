@@ -2598,7 +2598,9 @@
                 "CMIP",
                 "GMMIP",
                 "OMIP",
-                "RFMIP"
+                "RFMIP",
+                "DynVarMIP",
+                "ScenarioMIP"
             ],
             "cohort":[
                 "Registered"
@@ -2614,31 +2616,31 @@
                     "native_nominal_resolution":"100 km"
                 },
                 "atmos":{
-                    "description":"GFDL-AM4.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 33 levels; top level 1 hPa)",
+                    "description":"GFDL-AM4.0.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 33 levels; top level 1 hPa)",
                     "native_nominal_resolution":"100 km"
                 },
                 "atmosChem":{
-                    "description":"unnamed (fast chemistry, aerosol only)",
+                    "description":"fast chemistry, aerosol only",
                     "native_nominal_resolution":"100 km"
                 },
                 "land":{
-                    "description":"GFDL-LM4.0",
+                    "description":" GFDL-LM4.0.1 (1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 20 levels; bot level 10m) ; land-Veg:unnamed (dynamic vegetation, dynamic land use) ; land-Hydro:unnamed (soil water and ice, multi-layer snow, rivers and lakes)",
                     "native_nominal_resolution":"100 km"
                 },
                 "landIce":{
-                    "description":"GFDL-LM4.0",
+                    "description":"GFDL-LM4.0.1",
                     "native_nominal_resolution":"100 km"
                 },
                 "ocean":{
-                    "description":"GFDL-MOM6 (tripolar - nominal 0.25 deg; 1440 x 720 longitude/latitude; 75 levels; top grid cell 0-2 m)",
+                    "description":"GFDL-OM4p25 (GFDL-MOM6, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 75 levels; top grid cell 0-2 m)",
                     "native_nominal_resolution":"25 km"
                 },
                 "ocnBgchem":{
-                    "description":"GFDL BLING v2",
+                    "description":"GFDL-BLINGv2",
                     "native_nominal_resolution":"25 km"
                 },
                 "seaIce":{
-                    "description":"SIS2",
+                    "description":"GFDL-SIM4p25 (GFDL-SIS2.0, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 5 layers; 5 thickness categories)",
                     "native_nominal_resolution":"25 km"
                 }
             },
@@ -2664,11 +2666,12 @@
                     "native_nominal_resolution":"50 km"
                 },
                 "atmos":{
-                    "description":"GFDL-AM4.0.1 (Cubed-sphere (c192) - 0.5 degree nominal horizontal resolution; 720 x 360 longitude/latitude; 33 levels; top level 1 hPa)",
+                    "description":"GFDL-AM4C192 (Cubed-sphere (c192) - 0.5 degree nominal horizontal resolution; 720 x 360 longitude/latitude; 33 levels; top level 1 hPa)",
+                 
                     "native_nominal_resolution":"50 km"
                 },
                 "atmosChem":{
-                    "description":"unnamed (fast chemistry, aerosol only)",
+                    "description":"fast chemistry, aerosol only",
                     "native_nominal_resolution":"50 km"
                 },
                 "land":{
@@ -2680,7 +2683,7 @@
                     "native_nominal_resolution":"50 km"
                 },
                 "ocean":{
-                    "description":"GFDL-MOM6 (tripolar - nominal 0.25 deg; 1440 x 720 longitude/latitude; 75 levels; top grid cell 0-2 m)",
+                    "description":"GFDL-OM4p25 (GFDL-MOM6, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 75 levels; top grid cell 0-2 m)",
                     "native_nominal_resolution":"25 km"
                 },
                 "ocnBgchem":{
@@ -2688,7 +2691,7 @@
                     "native_nominal_resolution":"none"
                 },
                 "seaIce":{
-                    "description":"SIS2",
+                    "description":"GFDL-SIM4p25 (GFDL-SIS2.0, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 5 layers; 5 thickness categories)",
                     "native_nominal_resolution":"25 km"
                 }
             },
@@ -2710,15 +2713,15 @@
             "label_extended":"GFDL-ESM2M",
             "model_component":{
                 "aerosol":{
-                    "description":"GFDL-AM2",
+                    "description":"prescribed",
                     "native_nominal_resolution":"250 km"
                 },
                 "atmos":{
-                    "description":"GFDL-AM2 (Cubed-sphere (c48L24) - 2.5 degree lon x 2 degree lat; 144 x 90 longitude/latitude; 24 levels; top level ~3 hPa)",
+                    "description":"GFDL-AM2 (144 x 90 longitude/latitude; 24 levels; top level 1 hPa)",
                     "native_nominal_resolution":"250 km"
                 },
                 "atmosChem":{
-                    "description":"GFDL-AM2 (full atmospheric chemistry)",
+                    "description":"prescribed",
                     "native_nominal_resolution":"250 km"
                 },
                 "land":{
@@ -2734,11 +2737,12 @@
                     "native_nominal_resolution":"100 km"
                 },
                 "ocnBgchem":{
-                    "description":"none",
-                    "native_nominal_resolution":"none"
+                    "description":"GFDL-TOPAZ2",
+                    "native_nominal_resolution":"100km"
                 },
                 "seaIce":{
-                    "description":"SIS (Tripolar360x200L50)",
+                    "description":"GFDL-SIM2 (GFDL-SIS, tripolar - nominal 1 deg; 360 x 200 longitude/latitude; 3 layers; 5 thickness categories)
+",
                     "native_nominal_resolution":"100 km"
                 }
             },
@@ -2754,7 +2758,6 @@
                 "DAMIP",
                 "DynVarMIP",
                 "LUMIP",
-                "OMIP",
                 "ScenarioMIP"
             ],
             "cohort":[
@@ -2837,15 +2840,15 @@
                     "native_nominal_resolution":"none"
                 },
                 "ocean":{
-                    "description":"GFDL-MOM6 (tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 75 levels; top grid cell 0-2 m)",
+                    "description":"GFDL-OM4p5 (GFDL-MOM6, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 75 levels; top grid cell 0-2 m)",
                     "native_nominal_resolution":"50 km"
                 },
                 "ocnBgchem":{
-                    "description":"GFDL BLING v2",
+                    "description":"GFDL-BLINGv2",
                     "native_nominal_resolution":"50 km"
                 },
                 "seaIce":{
-                    "description":"SIS2",
+                    "description":"GFDL-SIM4p5 (GFDL-SIS2.0, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 5 layers; 5 thickness categories)",
                     "native_nominal_resolution":"50 km"
                 }
             },
